@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object-fit and Object-cover Images</title>
+    <title>Object-fit and Object-position Images</title>
 
     <style>
         /* box-sizing Reset */
@@ -41,11 +41,33 @@
             object-fit: cover;
         }
 
+        .cover1 {
+            height: 250px;
+            object-fit: none;
+            object-position: 50% 50%; /*default*/
+        }
+
+        .cover2 {
+            background-color: khaki;
+            height: 100px;
+            width: 200px;
+            object-fit: none;
+            object-position: 100px 10px;
+        }
+
+        .cover3 {
+            background-color: khaki;
+            height: 300px;
+            width: 100px;
+            object-fit: none;
+            object-position: -80px;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Test for Object-fit and Object-cover</h1>
+    <h1>Test for Object-fit and Object-position</h1>
     <div>
         <h2>Object Fit examples</h2>
         <img src="assets/camogetzback.jpg" alt="Hyundai Getz back showing on side of road with camo paint">
@@ -57,12 +79,18 @@
         <img src="assets/camogetzback.jpg" class="fit3" alt="Hyundai Getz back showing on side of road with camo paint">
         <p>3 - as per 2, but with object-fit: cover</p>
         <img src="assets/camogetzback.jpg" class="fit4" alt="Hyundai Getz back showing on side of road with camo paint">
-        <p>also object-fit: cover with smaller width</p>
-        <h2>Object Cover examples</h2>
+        <p>4 - also object-fit: cover with smaller width</p>
+        
+        <h2>Object Position examples</h2>
+        <p>For this to work, object-fit: none and dimensions are declared for each img</p>
         <img src="assets/camogetzfront.jpg" class="cover1" alt="Hyundai Getz front showing on side of road with camo paint">
+        <p>1 - object-fit: none, object-position: 50% 50%</p>
         <img src="assets/camogetzfront.jpg" class="cover2" alt="Hyundai Getz front showing on side of road with camo paint">
+        <p>2 - height 100px width 200px object-postion 100px 10px </p>
         <img src="assets/camogetzfront.jpg" class="cover3" alt="Hyundai Getz front showing on side of road with camo paint">
-        <img src="assets/camogetzfront.jpg" class="cover4" alt="Hyundai Getz front showing on side of road with camo paint">
+        <p>3 - height 300px width 100px object-position: -80px</p>
+        <img src="assets/camogetzfront.jpg" alt="Hyundai Getz front showing on side of road with camo paint">
+        <p>4 - original image without alteration</p>
     </div>
     
 </body>
