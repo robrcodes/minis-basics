@@ -18,11 +18,27 @@
 
         /* classes for image elements*/
         .fit1 {
+            width: 200px;
+            height: 100%;
 
         }
         
         .fit2 {
-            
+            width: 200px;
+            height: 300px;
+
+        }
+
+        .fit3 {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .fit4 {
+            width: 150px;
+            height: 280px;
+            object-fit: cover;
         }
 
     </style>
@@ -32,10 +48,16 @@
     <h1>Test for Object-fit and Object-cover</h1>
     <div>
         <h2>Object Fit examples</h2>
+        <img src="assets/camogetzback.jpg" alt="Hyundai Getz back showing on side of road with camo paint">
+        <p>0 - Original image</p>
         <img src="assets/camogetzback.jpg" class="fit1" alt="Hyundai Getz back showing on side of road with camo paint">
+        <p>1 - width 200px & height 100%</p>
         <img src="assets/camogetzback.jpg" class="fit2" alt="Hyundai Getz back showing on side of road with camo paint">
+        <p>2 - width 200px & height 300px</p>
         <img src="assets/camogetzback.jpg" class="fit3" alt="Hyundai Getz back showing on side of road with camo paint">
+        <p>3 - as per 2, but with object-fit: cover</p>
         <img src="assets/camogetzback.jpg" class="fit4" alt="Hyundai Getz back showing on side of road with camo paint">
+        <p>also object-fit: cover with smaller width</p>
         <h2>Object Cover examples</h2>
         <img src="assets/camogetzfront.jpg" class="cover1" alt="Hyundai Getz front showing on side of road with camo paint">
         <img src="assets/camogetzfront.jpg" class="cover2" alt="Hyundai Getz front showing on side of road with camo paint">
